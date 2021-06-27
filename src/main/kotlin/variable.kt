@@ -50,33 +50,36 @@ fun variableExample() {
      * 특징    : String 형은 "(쌍따옴표)를 사용합니다.
      * */
     var message: String = "hello world"
+    println(message)
 
     /**
      * Char : 단일 문자
      * 특징  : Char 형은 "(쌍따옴표) 가 아닌 '(홑따옴표)를 사용합니다.
      * */
     var alphabetFirst: Char = 'A'
+    println(alphabetFirst)
 
     /**
      * Boolean : true(참) 혹은 false(거짓)
      * */
     var isTrue: Boolean = true
     var isFalse: Boolean = false
+    println(isTrue)
+    if(isFalse) {
+        println("is False")
+    }
 
     /**
      * Int : 정수
      * */
     var count: Int = 5
     var nameLength: Int = "john".length
+    println(count)
+    println(nameLength)
 
     /**
      * Double : 부동소수점의 실수
      * */
     var pi = 3.14
-
-    /**
-     * List : 값을 요소로 저장하는 컬렉션
-     * */
-    var numbers: List<Int> = [1,2,3,4,5]
-
+    println(pi)
 }
