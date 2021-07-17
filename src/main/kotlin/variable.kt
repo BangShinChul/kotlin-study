@@ -3,6 +3,17 @@
  *
  * 참고 링크 : https://kotlinlang.org/docs/basic-syntax.html#variables
  * */
+
+
+/**
+ * 상수를 사용하려면 val 키워드 앞에 const 키워드를 사용하여 변수를 정의합니다.
+ *
+ * TIP :
+ * const val의 이름을 부여할 때는 모두 대문자를 사용하고, 각 단어 사이에는 밑줄(`_`)을 넣는 것이 관례입니다.
+ * 이렇게 하면 다른 var 및 val 변수들과 구분하기 쉬워서 코드를 알기 쉽게 해줍니다.
+ * */
+const val MAX_EXPERIENCE: Int = 5000
+
 fun variableExample() {
 
     /**
@@ -85,7 +96,7 @@ fun variableExample() {
 
 
     /**
-     * 때로는 값을 변경할 수 없는 변수를 사용해야 할 경우가 있습니다. (상수)
+     * 때로는 값을 변경할 수 없는 변수를 사용해야 할 경우가 있습니다.
      * 이 때에는 val 키워드를 사용하여 변수를 정의합니다.
      * */
     val playerName: String = "토마스"
@@ -98,4 +109,21 @@ fun variableExample() {
      * */
 //    playerName = "마드리갈"
 
+
+    /**
+     * 코틀린에서는 타입 추론(type inference) 기능이 있습니다.
+     * 변수를 선언하면서 초깃값을 지정하는 경우, 해당 변수의 타입을 생략할 수 있습니다.
+     * */
+    var yourName = "철수"
+    println(yourName)
+
+    /**
+     * 타입 추론을 통해 초기화 된 변수에
+     * 다른 타입의 값을 재할당 한다면
+     * Error:(2, 33) Kotlin: Type mismatch: inferred type is String but Int wat expected
+     * 와 같은 Type mismatch 에러를 출력합니다.
+     * */
+    // yourName = 4
+
+    println(MAX_EXPERIENCE)
 }
