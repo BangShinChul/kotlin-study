@@ -5,6 +5,8 @@ fun functionExamples() {
     functionCallExample() // 함수 호출 예제
     지명_함수_인자_예제()
 //    shouldReturnAString()
+    `**~prolly not a good idea!~**`()
+    `사용자가 로그아웃을 클릭하면 로그아웃되어야 합니다`()
 }
 
 /**
@@ -96,3 +98,13 @@ fun 지명_함수_인자_예제() {
 //    TODO("문자열을 반환하는 코드를 여기에 구현해야 함")
 //    println("절대 실행할 수 없는 코드")
 //}
+
+/**
+ * 백틱 함수 예제입니다.
+ * */
+fun `**~prolly not a good idea!~**`() {
+    println("prolly not a good idea!")
+}
+fun `사용자가 로그아웃을 클릭하면 로그아웃되어야 합니다`() {
+    println("테스트 코드를 작성합니다.")
+}
