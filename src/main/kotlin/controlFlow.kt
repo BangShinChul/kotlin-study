@@ -1,14 +1,17 @@
+/**
+ * 조건문과 조건식 예제입니다.
+ * */
 fun controlFlowAction() {
-    checkHealth1()
-    checkHealth2()
-    checkHealth3()
-    auraCheck1()
-    auraCheck2()
-    checkHealth4()
-    checkHealth5()
-    additionalRangeExam()
-    checkFaction()
-    checkHealth6()
+    checkHealth1() // if/else 표현식 예제
+    checkHealth2() // else if 표현식 예제
+    checkHealth3() // 중첩 if/else 표현식 예제
+    auraCheck1() // 비교 연산자 및 논리 연산자 사용 예제
+    auraCheck2() // 비교 연산자 및 논리 연산자 사용 예제
+    checkHealth4() // 조건표현식 예제
+    checkHealth5() // 범위 표현식 예제
+    additionalRangeExam() // 범위 표현식 예제
+    checkFaction() // when 표현식 예제
+    checkHealth6() // when 표현식 예제
 }
 
 /**
@@ -72,7 +75,7 @@ fun checkHealth3() {
 }
 
 /**
- * 비교 연산자 및 논리 연산자 사용 예시입니다.
+ * 비교 연산자 및 논리 연산자 사용 예제입니다.
  * */
 fun auraCheck1() {
     val name = "마드리갈"
@@ -87,7 +90,7 @@ fun auraCheck1() {
 
 
 /**
- * 비교 연산자 및 논리 연산자 사용 예시입니다.
+ * 비교 연산자 및 논리 연산자 사용 예제입니다.
  * */
 fun auraCheck2() {
     val name = "마드리갈"
@@ -169,6 +172,9 @@ fun checkHealth5() {
     println(auraColor)
 }
 
+/**
+ * 범위 표현식 예제입니다.
+ * */
 fun additionalRangeExam () {
     if (1 in 1..3) {
         println("TRUE")
