@@ -2,5 +2,7 @@ fun main(args: Array<String>) {
 //    variableExample()
 //    controlFlowAction()
 //    functionExamples()
-    anonymousFunctionExamples()
+//    anonymousFunctionExamples()
+//    nullableAndNonNullableExamples()
+    exceptionExamples()
 }
