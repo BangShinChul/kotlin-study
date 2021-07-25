@@ -5,5 +5,6 @@ fun main(args: Array<String>) {
 //    anonymousFunctionExamples()
 //    nullableAndNonNullableExamples()
 //    exceptionExamples()
-    stringExamples()
+//    stringExamples()
+    numericExamples()
 }
